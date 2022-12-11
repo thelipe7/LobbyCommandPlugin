@@ -1,0 +1,6 @@
+name: LobbyCommand
+version: 1.0.0
+main: net.thelipe.lobbycommand.LobbyCommandPlugin
+author: TheLipe
+commands:
+  lobby:

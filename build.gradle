@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+    id "com.github.johnrengelman.shadow" version "7.1.2"
+}
+
+group = 'net.thelipe'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+    maven {
+        name = 'elmakers-repo'
+        url = 'https://maven.elmakers.com/repository/'
+    }
+}
+
+dependencies {
+    compileOnly('org.spigotmc:spigot:1.8.8-R0.1-SNAPSHOT')
+}
+
+shadowJar {
+    archiveName("${project.name}-${project.version}.jar")
+}
+
+compileJava {
+    options.encoding('UTF-8')
+    sourceCompatibility('1.8')
+    targetCompatibility('1.8')
+}
+
+tasks.withType(Jar) {
+    destinationDirectory.set(file('C:/Users/Felipe/Documents/Trabalhos/Servidor_Teste/plugins'))
+}

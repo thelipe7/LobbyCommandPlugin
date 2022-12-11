@@ -1,0 +1,15 @@
+# Plugin configuration
+Config:
+  # List of server lobbies, by running /lobby the player is connected to a random server from this list
+  Lobbies:
+    - "lobby1"
+  # To deactivate a message or sound just put ""
+  Messages:
+    OnlyPlayers: "&cOnly players can execute this command."
+    ProblemOnConnection: "&cA problem occurred when connecting to the %server% server."
+    NoLobbyFound: "&cNo lobby was found available for connection."
+    Connecting: "&aConnecting to &f%server%&a..."
+  Sounds:
+    ProblemOnConnection: "VILLAGER_NO"
+    NoLobbyFound: "VILLAGER_NO"
+    Connecting: "LEVEL_UP"
